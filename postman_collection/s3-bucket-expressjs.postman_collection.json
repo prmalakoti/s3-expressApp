@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "dbb10248-0c11-403a-971c-ddedf3885d41",
+		"name": "s3-bucket-expressjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13817424"
+	},
+	"item": [
+		{
+			"name": "Sampe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/sample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/ReactExprees/Typescript/rest-api/postmanCollection/TypeScriptORMapi.postman_collection.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/ReactExprees/Typescript/rest-api/postmanCollection/TypeScriptORMapi.postman_collection.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadFile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/ReactExprees/Typescript/rest-api/postmanCollection/TypeScriptORMapi.postman_collection.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/download/SQL Interview.pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"download",
+						"SQL Interview.pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/ReactExprees/Typescript/rest-api/postmanCollection/TypeScriptORMapi.postman_collection.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/delete/SQL Interview.pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"delete",
+						"SQL Interview.pdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
