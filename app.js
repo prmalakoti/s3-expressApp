@@ -35,7 +35,7 @@ const upload = multer({
 })
 
 app.get('/sample', async function (req, res, next) {
-    res.send("Serevr is up and runnig");
+    res.send("Serevr is up and running...");
 })
 app.post('/upload', upload.single('file'), async function (req, res, next) {
 
